@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+.container{
+  width: 100%;
+  height: 200vh;
+  /* position: sticky; */
+  
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display:flex;
+    padding: 0px 18rem;
+}
+.header1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.header .header1 p{
+    color: rgb(162, 160, 160);
+}
+.header .header2 ul{
+    display: flex;
+}
+.header .header2 ul li{
+    list-style-type: none;
+    border-right: 1px solid rgb(162, 160, 160);
+    padding: 20px 30px;
+}
+.header .header2 ul li a{
+    color: rgb(162, 160, 160);
+    text-decoration: none;
+}
+.header .header2 ul li a:hover{
+    color: dodgerblue;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    padding: 0px 18rem;
+    font-size: 20px;
+    position: sticky;
+    left: 0;
+    transition: 0.3s;
+    top: 0;
+    z-index: 10;
+}
+.bonner:hover .menu {
+  top: 0;
+  z-index: 99;
+  transition: 0.3s;
+  background-color: whitesmoke;
+
+}
+.menu .menu1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu1 img{
+     width: 60%;
+}
+.menu .menu2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.menu .menu2 ul{
+    display: flex;
+
+}
+.menu .menu2 ul li{
+    list-style-type: none;
+    padding: 0px 30px;
+}
+.menu .menu2 ul li a{
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    color: black;
+}
+/* ========================sub-menu======== */
+.sub-menu{
+  position: absolute;
+  top: 100%;
+  left: 1%;
+  background-color: rgb(52, 165, 165);
+  width: 15%;
+
+}
+.sub-menu li{
+  /* background-color: #717FE0; */
+  margin-bottom: 5%;
+}
+.sub-menu li a{
+ /* background-color: #f74877; */
+}
+.sub-menu li:hover{
+  background-color: transparent;
+}
+.label1::after {
+    content: attr(data-label1);
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: white;
+    background-color: #f74877;
+    border-radius: 5px;
+    position: absolute;
+    top: 7%;
+    left: 40%;
+}
+.menu .menu2 ul li a:hover{
+    color: dodgerblue;
+}
+.menu .menu3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+.menu .menu3 ul{
+    display: flex;
+}
+.menu .menu3 ul li{
+    list-style-type: none;
+    padding: 0px 13px;
+}
+.menu .menu3 ul li i{
+    font-size: 30px;
+    cursor: pointer;
+   
+}
+.menu .menu3 ul li span{
+    background-color: #717FE0;
+    clip-path: inset(0 1% 0 1%);
+    color: white;
+    position: absolute;
+    top: 18%;
+    padding: 0px 5px;
+}
+.menu .menu3 ul li i:hover{
+    color: dodgerblue;
+}
+/* *********Bonner*********** */
+.bonner{
+    width: 100%;
+    height: 90vh;
+}
+.background-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundChange 10s infinite;
+  }
+  
+  @keyframes backgroundChange {
+    0% { 
+        background-image: url('../CozaPicture/bonner1.jpg');
+    }
+    30%{
+        background-image: none;
+    }
+    35% {
+        background-image: url('../CozaPicture/bonner2.jpg');
+    }
+    70%{
+        background-image: none;
+
+    }
+    75% {
+        background-image: url('../CozaPicture/bonner3.jpg');
+     
+    }
+    100%{
+        background-image: none;
+    }
+  }
+  .text-container{
+    width: 30%;
+    height: 30%;
+    font-size: 35px;
+    /* margin: 20% 10%; */
+  }
+
+  .text-container button{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    background-color:#717FE0;
+    border: none;
+    border-radius: 20px;
+  }
+  .sale1{
+    width: 100%;
+    height: 60vh;
+    padding: 7rem 18rem;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .sale1-row1 {
+    width: 32%;
+    height: 100% ;
+    border: 1px solid gray;
+    position: relative;
+  }
+  .sale1-row1:hover {
+    background-color: rgba(84, 118, 189, 0.707);
+  }
+  .sale1-row1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
+  /* +++++++++++text-sale1++++++++++ */
+  .text-sale1{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   font-size: 30px;
+  }
+  .sale1-row1:hover .text-sale1{
+    color: white;
+  }
+  .text-sale2 {
+    margin-left: 10%;
+    margin-top: 350px;
+  }
+  .text-sale2 a{
+    width: 30%;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  /* =============Product======== */
+  .product{
+    width: 100%;
+    height: 20vh;
+    padding: 0 18rem;
+  }
+  .product1{
+    width: 100%;
+    height: 60%;
+  }
+  .product2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+  }
+  .product1 h1{
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  .product2-col1{
+    width: 75%;
+    height: 100%;
+  }
+  .product2-col2{
+    width: 25%;
+    height: 100%;
+    position: relative;
+  }
+  .product2-col1 ul{
+    display: flex;
+  }
+  .product2-col1 ul li{
+    list-style-type: none;
+    padding: 15px 25px;
+    font-size: 25px;
+  }
+  .product2-col1 ul li a{
+    text-decoration: none;
+  }
+  .product2-col1 ul li a::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: black;
+    top: 10%;
+  }
+  .product2-col1 ul li a:hover::before{
+    width: 10%;
+    transition: all 0.5s;
+  }
+  .product2-col2 button{
+    width: 47%;
+    margin-left: 2%;
+    padding: 15px 10px;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+  .product2-col2 button:hover{
+    background-color: #5464cccd;
+    color: white;
+  }
+  /* ====================Product box====================== */
+  .product-box{
+    width: 100%;
+    height: 190vh;
+    padding: 2rem 18rem;
+  }
+  .product-box .box1{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .box1 .box1-row{
+     width: 23.5%;
+     height: 100%;
+  }
+ .box1-row .box1-row-row1{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  .box1-row .box1-row-row1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     z-index: -1;
+     position: absolute;
+  }
+  .box1-row-row1 .text-button {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+  }
+  .box1-row-row1 .text-button button{
+    width: 35%;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: rgb(41, 38, 38);
+
+  }
+  .box1-row-row1:hover .text-button{
+   top: 70%;
+   transition: all 0.8s;
+  }
+  .text-button button:hover{
+    background-color: black;
+    color: white;
+  }
+  .box1-row-row1:hover img{
+    transform: scale(1.1);
+    transition: all 0.8s;
+  }
+  .box1-row .box1-row-row2{
+    width: 100%;
+    height: 15%;
+  }
+  .box1-row-row2 a{
+    font-size: 30px;
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+  }
+  .box1-row-row2 a:hover{
+    color: dodgerblue;
+  }
+  .box1-row-row2 h3{
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  /* ============================================ */
+  .button-Load{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-Load  button{
+ width: 10%;
+ padding: 10px 10px;
+ font-size: 35px;
+ border-radius: 35px;
+ cursor: pointer;
+ border: none;
+ transition: 0.5s;
+ background-color: rgb(199, 199, 199);
+}
+.button-Load  button:hover{
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.footer{
+  width: 100%;
+  height: 55vh;
+  background-color: black;
+  padding: 0 18rem;
+}
+.footer-box1{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0rem;
+}
+.footer-box2{
+  width: 100%;
+  height: 20%;
+}
+.footer .footer1{
+  width: 23.4%;
+  height: 100%;
+}
+.footer1 h1{
+  font-size: 40px;
+  color: white;
+}
+.footer1 ul li{
+  list-style-type: none;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.footer1 ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footer1 ul li a:hover{
+  color: dodgerblue;
+}
+.footer-box1 .footer1 p{
+   font-size: 20px;
+   color: white;
+}
+.footer1 .footer1-icon ul {
+  display: flex;
+}
+.footer1 .footer1-icon ul li{
+  margin-right: 30px;
+  font-size: 40px;
+}
+.footer1 .footer1-icon ul li a:hover{
+  color: dodgerblue;
+}
+.footer1 button{
+  width: 50%;
+  margin-left: 20%;
+  padding: 10px 10px;
+  font-size: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  transition: all 0.8s;
+}
+.footer1 button:hover{
+  background-color: white;
+  color: black;
+  transition: all 0.8s;
+}
+.footer-box2-row1{
+  width: 100%;
+  height: 60%;
+}
+.footer-box2-row2{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-box2-row1 ul{
+  display: flex;
+  justify-content: center;
+
+}
+.footer-box2-row1 ul li{
+  list-style-type: none;
+  padding: 0px 10px;
+}
+.footer-box2-row1 ul li a{
+ width: 30%;
+}
+.footer-box2-row2 p{
+  font-size: 20px;
+  color: white;
+}
+.footer-box2-row2 p span{
+  color: #2b6bbe;
+}
